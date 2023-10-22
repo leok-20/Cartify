@@ -1,1 +1,29 @@
-<p>contact works!</p>
+<section class="position-relative text-center text-white mb-5">
+    <div style="height: 800px; filter: blur(1.5px)">
+        <img src="/assets/seattle.jpg" class="w-100" alt="Banner" style=" height: 100%; object-fit: cover;" />
+    </div>
+    <div class="container position-absolute top-50 start-50 translate-middle" style="max-width: 600px">
+        <div class="py-5 w">
+            <h1>Contact Us</h1>
+            <form class="p-md-5 border rounded-3 bg-body-tertiary" style="padding: 0.5em">
+                <div class="form-floating mb-3">
+                    <input type="text" id="contact-name" class="form-control" />
+                    <label class="form-label" for="contact-name">Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" id="contact-email" class="form-control" />
+                    <label class="form-label" for="contact-email">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" id="contact-message" rows="4"></textarea>
+                    <label class="form-label" for="contact-message">Message</label>
+                </div>
+                <!-- <div class="form-check d-flex justify-content-left mb-3">
+                <input class="form-check-input me-2" type="checkbox" value="" id="contact-copy" checked />
+                <label class="form-check-label" for="contact-copy">Send me a copy of this message</label>
+            </div> -->
+                <button type="submit" class="w-100 btn btn-lg btn">Send</button>
+            </form>
+        </div>
+    </div>
+</section>

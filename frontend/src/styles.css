@@ -41,8 +41,12 @@ ul.dropdown-cart li .item {
     margin: 3px 0;
 }
 
-ul.dropdown-cart li .item:hover {
+ul.dropdown-cart li .item-light:hover {
     background-color: #f3f3f3;
+}
+
+ul.dropdown-cart li .item-dark:hover {
+    background-color: #2a2f35
 }
 
 ul.dropdown-cart li .item:after {
@@ -110,12 +114,34 @@ span.carousel-control-prev-icon {
     object-fit: cover;
 }
 
-/* [data-bs-theme="light"],
+[data-bs-theme="light"],
 a {
-    transition-duration: 1s;
+    transition-duration: 2s;
 }
 
 
 [data-bs-theme="dark"] {
-    transition-duration: 1s;
-} */
+    transition-duration: 2s;
+}
+
+/* Forms */
+.form-control-light:focus {
+    border: 1px solid #dee2e6;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(204, 204, 204, 0.6);
+}
+
+.form-control-dark:focus {
+    border: 1px solid rgba(248, 249, 250, 0.25);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(70, 70, 70, 0.6);
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+.contact-us {
+    background: url("/assets/seattle.jpg") no-repeat center fixed;
+    background-size: cover;
+    min-height: 67vh;
+    color: #fff;
+}

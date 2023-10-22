@@ -5,7 +5,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgxStripeModule } from 'ngx-stripe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { Router, RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { NgIconsModule } from '@ng-icons/core';
 import { featherSearch, featherUser, featherShoppingCart, featherSun, featherMoon } from '@ng-icons/feather-icons';
 

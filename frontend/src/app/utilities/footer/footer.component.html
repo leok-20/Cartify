@@ -2,7 +2,7 @@
     <footer class="d-flex justify-content-between my-5 text-start flex-wrap">
         <ul class="nav flex-column">
             <li class="fw-bold nav-item">
-                <a href="/" class="nav-link text-dark">
+                <a href="/" class="nav-link" [ngClass]="darkmode ? 'text-light' : 'text-dark'">
                     Product
                 </a>
             </li>
@@ -23,8 +23,8 @@
             </li> -->
         </ul>
         <ul class="nav flex-column">
-            <li class="fw-bold nav-item text-dark">
-                <a href="/" class="nav-link text-dark">
+            <li class="fw-bold nav-item">
+                <a href="/" class="nav-link" [ngClass]="darkmode ? 'text-light' : 'text-dark'">
                     Help
                 </a>
             </li>
@@ -51,7 +51,7 @@
         </ul>
         <ul class="nav flex-column">
             <li class="fw-bold nav-item">
-                <a href="/" class="nav-link text-dark">
+                <a href="/" class="nav-link text" [ngClass]="darkmode ? 'text-light' : 'text-dark'">
                     Content
                 </a>
             </li>
@@ -78,7 +78,7 @@
         </ul>
         <ul class="nav flex-column">
             <li class="fw-bold nav-item">
-                <a href="/" class="nav-link text-dark">
+                <a href="/" class="nav-link" [ngClass]="darkmode ? 'text-light' : 'text-dark'">
                     Terms & Conditions
                 </a>
             </li>
