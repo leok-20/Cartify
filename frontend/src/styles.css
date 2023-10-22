@@ -109,3 +109,13 @@ span.carousel-control-prev-icon {
     height: 10vw;
     object-fit: cover;
 }
+
+/* [data-bs-theme="light"],
+a {
+    transition-duration: 1s;
+}
+
+
+[data-bs-theme="dark"] {
+    transition-duration: 1s;
+} */
