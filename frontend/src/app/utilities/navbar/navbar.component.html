@@ -1,0 +1,125 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed top-0 start-0 w-100">
+    <div class="container">
+        <a class="navbar-brand d-lg-none" href="/">CARTIFY</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse p-2 flex-column" id="navbarContent">
+            <div class="d-flex justify-content-center justify-content-lg-between flex-column flex-lg-row w-100">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" />
+                    <button class="btn btn-outline-dark" type="submit">
+                        <ng-icon name="featherSearch"></ng-icon>
+                    </button>
+                </form>
+                <a class="navbar-brand d-none d-lg-block" href="/">CARTIFY</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item d-flex align-items-center">
+                        <a class="nav-link mx-2" href="/">
+                            <ng-icon name="featherUser"></ng-icon>
+                            My Account
+                        </a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <ng-icon name="featherShoppingCart"></ng-icon>
+                                Bag
+                                <span class=" badge rounded-pill bg-secondary">
+                                    4
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-cart">
+                                <li>
+                                    <span class="item">
+                                        <span class="item-left">
+                                            <span class="item-info">
+                                                <span>Item name</span>
+                                                <span>$10.99</span>
+                                            </span>
+                                        </span>
+                                        <span class="item-right">
+                                            <button class=" btn btn-xs pull-right">x</button>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="item">
+                                        <span class="item-left">
+                                            <span class="item-info">
+                                                <span>Item name</span>
+                                                <span>$3.27</span>
+                                            </span>
+                                        </span>
+                                        <span class="item-right">
+                                            <button class=" btn btn-xs pull-right">x</button>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="item">
+                                        <span class="item-left">
+                                            <span class="item-info">
+                                                <span>Item name</span>
+                                                <span>$17.40</span>
+                                            </span>
+                                        </span>
+                                        <span class="item-right">
+                                            <button class=" btn btn-xs pull-right">x</button>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="item">
+                                        <span class="item-left">
+                                            <span class="item-info">
+                                                <span>Item name</span>
+                                                <span>$2.20</span>
+                                            </span>
+                                        </span>
+                                        <span class="item-right">
+                                            <button class=" btn btn-xs pull-right">x</button>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li class="divider"></li>
+                                <hr class="mt-2 mb-3" />
+                                <li class="text-center"><a class="nav-link" href="/">View Cart</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-block w-100">
+                <ul class="navbar-nav d-flex justify-content-center align-items-center pt-3">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="/">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="/">
+                            Grocery
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="/">
+                            Stores
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="/">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="/">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
