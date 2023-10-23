@@ -41,63 +41,29 @@
                     </li>
                     <li class="nav-item d-flex align-items-center">
                         <div class="dropdown">
-                            <a class="nav-link dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                data-bs-auto-close="outside">
                                 <ng-icon name="featherShoppingCart"></ng-icon>
                                 Bag
                                 <span class=" badge rounded-pill bg-secondary">
-                                    4
+                                    {{cartList.length}}
                                 </span>
                             </a>
                             <ul class="dropdown-menu dropdown-cart">
-                                <li>
+                                <li *ngFor="let cartItem of cartList">
                                     <span class="item" [ngClass]="darkmode ? 'item-dark' : 'item-light'">
                                         <span class="item-left">
                                             <span class="item-info">
-                                                <span>Item name</span>
-                                                <span>$10.99</span>
+                                                <span>{{cartItem.name}}<div
+                                                        class="badge rounded-pill bg-secondary mx-1">
+                                                        {{cartItem.amount}}
+                                                    </div></span>
+                                                <span>${{cartItem.price * cartItem.amount}}</span>
                                             </span>
                                         </span>
                                         <span class="item-right">
-                                            <button class=" btn btn-xs pull-right">x</button>
-                                        </span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <span class="item" [ngClass]="darkmode ? 'item-dark' : 'item-light'">
-                                        <span class="item-left">
-                                            <span class="item-info">
-                                                <span>Item name</span>
-                                                <span>$3.27</span>
-                                            </span>
-                                        </span>
-                                        <span class="item-right">
-                                            <button class=" btn btn-xs pull-right">x</button>
-                                        </span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <span class="item" [ngClass]="darkmode ? 'item-dark' : 'item-light'">
-                                        <span class="item-left">
-                                            <span class="item-info">
-                                                <span>Item name</span>
-                                                <span>$17.40</span>
-                                            </span>
-                                        </span>
-                                        <span class="item-right">
-                                            <button class=" btn btn-xs pull-right">x</button>
-                                        </span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <span class="item" [ngClass]="darkmode ? 'item-dark' : 'item-light'">
-                                        <span class="item-left">
-                                            <span class="item-info">
-                                                <span>Item name</span>
-                                                <span>$2.20</span>
-                                            </span>
-                                        </span>
-                                        <span class="item-right">
-                                            <button class=" btn btn-xs pull-right">x</button>
+                                            <button class=" btn btn-xs pull-right"
+                                                (click)="deleteItem(cartItem.id)">x</button>
                                         </span>
                                     </span>
                                 </li>
