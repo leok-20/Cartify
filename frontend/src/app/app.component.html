@@ -1,7 +1,7 @@
-<navbar (themePicked)="updateTheme($event)"></navbar>
+<div id="wrap">
+    <navbar (themePicked)="updateTheme($event)"></navbar>
 
-<router-outlet></router-outlet>
-<!-- <checkout></checkout> -->
-<!-- <home></home> -->
+    <router-outlet></router-outlet>
+</div>
 
 <app-footer [darkmode]="darkmode"></app-footer>

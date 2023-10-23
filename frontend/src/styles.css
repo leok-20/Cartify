@@ -225,3 +225,12 @@ input[type="search"]::-webkit-search-cancel-button {
         font-size: 2rem;
     }
 }
+
+html,
+body {
+    height: 100%;
+}
+
+#wrap {
+    min-height: 73%;
+}

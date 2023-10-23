@@ -19,6 +19,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { AboutComponent } from './pages/about/about.component';
 import { GroceryComponent } from './pages/grocery/grocery.component';
 import { StoresComponent } from './pages/stores/stores.component';
+import { ItemComponent } from './pages/grocery/components/item/item.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -38,7 +39,8 @@ const routes: Routes = [
     ContactComponent,
     AboutComponent,
     GroceryComponent,
-    StoresComponent
+    StoresComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,
